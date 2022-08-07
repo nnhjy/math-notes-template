@@ -1,0 +1,76 @@
+% ***********************************************************************
+\newcommand{\Normalstretch}{1.0} %change to define space between lines
+\renewcommand{\baselinestretch}{\Normalstretch}
+\newenvironment{singlespace}
+{\renewcommand{\baselinestretch}{1} \small \normalsize}
+{\renewcommand{\baselinestretch}{\Normalstretch} \small \normalsize}
+% ***********************************************************************
+\newcommand{\baseenvskip}{\baselineskip 2mm}
+
+% Standard Notation for Theorems and Lemmas
+\newtheorem{mydef}{Definition}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{claim}[thm]{Claim}
+
+\newtheorem{proposition}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{corollary}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{rmk}{Remark}[section]
+\newenvironment{remark}{\begin{rmk}\rm\baseenvskip}{\end{rmk}}
+\newtheorem{definition}[rmk]{Definition}
+
+%How numbering is defined in articles (standard)
+\numberwithin{equation}{section} \numberwithin{thm}{section}
+\numberwithin{rmk}{section} \numberwithin{figure}{section}
+
+% ************************ space ************************************
+\newcommand{\hhs}[1]{\hspace{#1mm}}
+\newcommand{\hs}{\hspace{5mm}}
+\newcommand{\vp}{\vspace{1mm}}
+\newcommand{\vs}{\vspace{5mm}}
+\newcommand{\jl}{$\frac{}{}$} %User defined for empty symbol to jump line
+% ********************** newcommand *********************************
+\newcommand{\mbf}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\hb}[1]{\hspace{-#1 mm}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\QED}{\hfill $\Box$}
+% *********************** frequently used math symbols from AMS *******
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+% ************** Some frequently used symbols - User defined ***********
+% ************** Also Called MACROS ************************************
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Hv}{\mathcal{H}_v}
+\newcommand{\h}{\mathcal{H}}
+\newcommand{\Ov}{\mathcal{O}_v}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\Rn}{R^n}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Ce}{\widehat{\mathbb{C}}}
+\newcommand{\si}{\sigma}
+\newcommand{\Cn}{\mathbb{C}^n}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\p}{\partial}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\D}{\delta}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\finv}{f^{-1}}
+\newcommand{\im}{\imath}
+\newcommand{\ga}{\gamma}
+\newcommand{\ze}{\zeta}
+\newcommand{\fee}{\varphi}
+\newcommand{\noi}{\noindent}
+
+% ***********************************************************************

@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.fls
+*.out
+*.gz
+*.toc
+*.fdb_latexmk
+*ipynb_checkpoints
+.vscode
+.git

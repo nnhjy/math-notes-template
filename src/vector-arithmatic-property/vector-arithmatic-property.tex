@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\pagestyle{empty}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{eucal}
+
+\usepackage{graphicx,psfrag} %only include if using pictures
+
+\usepackage{ifthen} %only include if using conditional package
+
+%\usepackage{xymatrix}
+
+
+%keep this...%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Side Margins
+\evensidemargin 0.1 in \oddsidemargin 0.1 in
+
+%Paragraph Size
+\parindent 24pt
+
+%size of page
+\textheight 9.6 in \textwidth 6.2 in
+\baselineskip 9.6 in \topmargin 0.005 in
+
+
+% ***********************************************************************
+\include{definitions}
+%
+% *******************************************************************
+% At First run of Template, only modify from here below........ *****
+% *******************************************************************
+
+\title{test}
+\author{Jiangyi Huang}
+\date{August 2022}
+
+\begin{document}
+
+\maketitle
+
+% ******************** ABSTRACT *************************************
+\begin{abstract}
+Insert abstract
+\end{abstract}
+% Must be present so the above information is displayed.
+% *******************************************************************
+% **** Begin Typing your work from here below ***********************
+% *******************************************************************
+
+
+\section{Introduction}
+
+\mydef \cite{einstein} is an in-text citation.
+
+\thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
+
+\begin{proof}
+
+Since $K \subset \underset{\alpha \in A}\cup U_\alpha$, for each point $p$ in $K$ there is a positive number $2\varepsilon(p)$ so that the ball $B(p,2\varepsilon(p))$ is contained in one of the open sets of $\mathcal{F}$. Clearly $\{B(p,2\varepsilon(p)\}_{p \in K}$ forms an open cover of K, and so by compactness this admits a finite refinement.
+
+\end{proof}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{refs.bib}
+
+\end{document}
