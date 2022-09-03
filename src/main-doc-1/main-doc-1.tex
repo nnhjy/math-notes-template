@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 
 \pagestyle{empty}
 
@@ -57,7 +58,15 @@ Insert abstract
 
 \section{Introduction}
 
+First paragraph is not indent by default.
+
 \mydef \cite{einstein} is an in-text citation.
+
+Text following theorem denotation are italic by default.
+
+\rm Normal text with default indent.
+
+\noindent \rm Normal text without indent.
 
 \thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
 
