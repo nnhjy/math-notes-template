@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - 'src/vector-arithmatic-property/**'    
+      - 'src/main-doc-1/**'    
 
 jobs:
   build_latex:
@@ -17,17 +17,17 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: vector-arithmatic-property.tex
-          working_directory: src/vector-arithmatic-property
+          root_file: main-doc-1.tex
+          working_directory: src/main-doc-1
           
 #       - name: Check pdf files
 #         run:
 #           file $GITHUB_WORKSPACE/src/vector-arithmatic-property.pdf | grep -q ' PDF '
           
-      - name: Upload vector-arithmatic-property.pdf
+      - name: Upload main-doc-1.pdf
         run: |          
           # Move file to root folder
-          mv $GITHUB_WORKSPACE/src/vector-arithmatic-property/vector-arithmatic-property.pdf $GITHUB_WORKSPACE/pdfs/vector-arithmatic-property.pdf
+          mv $GITHUB_WORKSPACE/src/main-doc-1/main-doc-1.pdf $GITHUB_WORKSPACE/pdfs/main-doc-1.pdf
           
           # configure git
           git config --global user.name "nnhjy"
@@ -35,8 +35,8 @@ jobs:
           
           # add file and push
           git checkout main
-          git add -f pdfs/vector-arithmatic-property.pdf
-          git commit -m "[GA] update vector-arithmatic-property.pdf"
+          git add -f pdfs/main-doc-1.pdf
+          git commit -m "[GA] main-doc-1.pdf"
           git push
 
         env:
