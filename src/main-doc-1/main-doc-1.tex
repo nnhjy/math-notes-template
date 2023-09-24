@@ -33,7 +33,7 @@
 
 
 % ***********************************************************************
-\include{definitions}
+\include{src/main-doc-1/definitions}
 %
 % *******************************************************************
 % At First run of Template, only modify from here below........ *****
@@ -56,30 +56,7 @@ Insert abstract
 % **** Begin Typing your work from here below ***********************
 % *******************************************************************
 
-
-\section{Introduction}
-
-First paragraph is not indent by default. Using \texttt{\textbackslash usepackage\{indentfirst\}} intents first paragraphs.
-
-In ordinary text, we can write $\mathbi{a} \in \R$, compared with $\mathbf{a} \in \R$.
-
-\mydef \cite{einstein} is an in-text citation.
-
-Text following theorem denotation are italic by default.
-
-\rm % Remove the above formatting for all following text.
-
-Ordinary text with default indent.
-
-\noindent Ordinary text without indent. \href{https://www.overleaf.com/learn/latex/Hyperlinks}{Hyperlink} is available.
-
-\thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
-
-\begin{proof}
-
-Since $K \subset \underset{\alpha \in A}\cup U_\alpha$, for each point $p$ in $K$ there is a positive number $2\varepsilon(p)$ so that the ball $B(p,2\varepsilon(p))$ is contained in one of the open sets of $\mathcal{F}$. Clearly $\{B(p,2\varepsilon(p)\}_{p \in K}$ forms an open cover of K, and so by compactness this admits a finite refinement.
-
-\end{proof}
+\include{src/main-doc-1/section-1-Introduction}
 
 \newpage
 \bibliographystyle{plain}
