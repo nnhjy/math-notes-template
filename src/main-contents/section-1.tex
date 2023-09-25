@@ -1,4 +1,4 @@
-\section{Introduction}
+\section{Section 1} \label{section-1}
 
 The first paragraph is not indented by default. Use \texttt{\textbackslash usepackage\{indentfirst\}} to intent first paragraphs.
 
@@ -8,11 +8,13 @@ In ordinary text, we can write $\mathbi{a} \in \R$, compared with $\mathbf{a} \i
 
 Text following theorem denotation are italic by default.
 
-\rm % Remove the above formatting for all the following text.
+\rm % Remove the above formatting (e.g. italics) for the following text.
 
 Ordinary text with default indent.
 
-\noindent Ordinary text without indent. \href{https://www.overleaf.com/learn/latex/Hyperlinks}{Hyperlink} is available.
+\noindent Ordinary text without indent. \href{https://www.overleaf.com/learn/latex/Hyperlinks}{Hyperlink} is available. 
+
+Referring to Section \ref{section-2} and equation \ref{eq:2.1}. More details can be found \href{https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats}{here}.
 
 \thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
 
@@ -21,3 +23,5 @@ Ordinary text with default indent.
 Since $K \subset \underset{\alpha \in A}\cup U_\alpha$, for each point $p$ in $K$ there is a positive number $2\varepsilon(p)$ so that the ball $B(p,2\varepsilon(p))$ is contained in one of the open sets of $\mathcal{F}$. Clearly $\{B(p,2\varepsilon(p)\}_{p \in K}$ forms an open cover of K, and so by compactness this admits a finite refinement.
 
 \end{proof}
+
+\rm % Remove the above formatting (e.g. italics) for the following text.
