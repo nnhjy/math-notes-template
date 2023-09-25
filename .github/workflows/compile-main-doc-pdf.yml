@@ -22,7 +22,7 @@ jobs:
           
 #       - name: Check pdf files
 #         run:
-#           file $GITHUB_WORKSPACE/src/vector-arithmatic-property.pdf | grep -q ' PDF '
+#           file $GITHUB_WORKSPACE/src/main-doc-1.pdf | grep -q ' PDF '
           
       - name: Upload main-doc-1.pdf
         run: |          
