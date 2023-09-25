@@ -17,17 +17,17 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main-doc-1.tex
-          working_directory: src/main-doc-1
+          root_file: MainText.tex
+          working_directory: src/main-contents
           
 #       - name: Check pdf files
 #         run:
-#           file $GITHUB_WORKSPACE/src/main-doc-1.pdf | grep -q ' PDF '
+#           file $GITHUB_WORKSPACE/src/MainText.pdf | grep -q ' PDF '
           
-      - name: Upload main-doc-1.pdf
+      - name: Upload MainText.pdf
         run: |          
           # Move file to root folder
-          mv $GITHUB_WORKSPACE/src/main-doc-1/main-doc-1.pdf $GITHUB_WORKSPACE/pdfs/main-doc-1.pdf
+          mv $GITHUB_WORKSPACE/src/main-contents/MainText.pdf $GITHUB_WORKSPACE/pdfs/MainText.pdf
           
           # configure git
           git config --global user.name "nnhjy"
@@ -35,8 +35,8 @@ jobs:
           
           # add file and push
           git checkout main
-          git add -f pdfs/main-doc-1.pdf
-          git commit -m "[GA] main-doc-1.pdf"
+          git add -f pdfs/MainText.pdf
+          git commit -m "[GA] MainText.pdf"
           git push
 
         env:
