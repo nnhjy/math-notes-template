@@ -8,7 +8,12 @@
 \newcommand{\baseenvskip}{\baselineskip 2mm}
 
 % Standard Notation for Theorems and Lemmas
-\newtheorem{mydef}{Definition}
+\newtheorem{definition}{Definition}[section]
+
+% definition disregarding section order
+% \newtheorem{definition}{Definition}
+
+\newtheorem{concept}{Concept}[section]
 
 \newtheorem{thm}{Theorem}
 
@@ -25,7 +30,9 @@
 \theoremstyle{remark}
 \newtheorem{rmk}{Remark}[section]
 \newenvironment{remark}{\begin{rmk}\rm\baseenvskip}{\end{rmk}}
-\newtheorem{definition}[rmk]{Definition}
+
+% remark style definition
+% \newtheorem{definition}[rmk]{Definition}
 
 %How numbering is defined in articles (standard)
 \numberwithin{equation}{section} \numberwithin{thm}{section}
