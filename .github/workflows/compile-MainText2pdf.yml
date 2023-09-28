@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - 'src/main-doc-1/**'    
+      - 'src/main-contents/**'    
 
 jobs:
   build_latex:
