@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - 'src/main-contents/**'    
+      - 'src/main-contents/*'    
 
 jobs:
   build_latex:
@@ -36,7 +36,7 @@ jobs:
           # add file and push
           git checkout main
           git add -f pdfs/MainText.pdf
-          git commit -m "[GA] MainText.pdf"
+          git commit -m "[GA] upload MainText.pdf"
           git push
 
         env:
